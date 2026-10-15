@@ -59,7 +59,7 @@ const nameMismatches = data.weapons
   .filter((weapon) => canonicalWeaponZh[weapon.id] && weapon.zh !== canonicalWeaponZh[weapon.id])
   .map((weapon) => `${weapon.id}: ${weapon.zh} !== ${canonicalWeaponZh[weapon.id]}`);
 
-const stateIds = ['poison', 'freeze', 'fire', 'resin', 'stun', 'crit', 'energy', 'special', 'shield', 'vayu', 'heal', 'gold', 'damage', 'corrupted'];
+const stateIds = ['poison', 'freeze', 'fire', 'resin', 'stun', 'crit', 'energy', 'special', 'shield', 'vayu', 'heal', 'gold', 'damage', 'corrupted', 'element_reaction', 'explosion', 'greek_fire', 'toxic_bog', 'freeze_suppress', 'freeze_bypass'];
 const nodeIds = new Set([
   ...data.weapons.map((node) => `weapon:${node.id}`),
   ...data.tools.map((node) => `tool:${node.id}`),
